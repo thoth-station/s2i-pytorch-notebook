@@ -6,7 +6,31 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+
+beautifulsoup4 = "*"
+bokeh = "*"
+cloudpickle = "*"
+cython = "*"
+dask = "*"
+dill = "*"
+distributed = "*"
+h5py = "*"
+ipywidgets = "*"
+jupyter-bokeh = "*"
+jupyter-tensorboard = "*"
+matplotlib = "*"
+pandas = "*"
+plotly = "*"
+pyarrow = "*"
+s3fs = "*"
+scikit-image = "*"
+scikit-learn = "*"
+scipy = "*"
+seaborn = "*"
+sqlalchemy = "*"
+statsmodels = "*"
 torch  = "*"
+torchvision= "*"
 
 [requires]
 python_version = "3.6"
