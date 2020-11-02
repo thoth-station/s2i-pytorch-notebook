@@ -29,6 +29,7 @@ scipy = "*"
 seaborn = "*"
 sqlalchemy = "*"
 statsmodels = "*"
+tensorboard = "<2.0"
 torch  = "*"
 torchvision= "*"
 
