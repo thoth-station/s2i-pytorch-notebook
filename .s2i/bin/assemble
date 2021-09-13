@@ -25,6 +25,12 @@ jupyter serverextension enable jupyter_tensorboard --sys-prefix
 jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 # jupyter labextension install @bokeh/jupyter_bokeh --no-build
 
+# Enable jupyterlab-s3-browser for s3 storage browsing
+jupyter serverextension enable --py jupyterlab_s3_browser
+
+# Enable elyra python editor
+jupyter labextension install @elyra/python-editor-extension@2.2.4 --no-build
+
 jupyter lab build
 
 # Enable bokeh extension also for single notebooks
