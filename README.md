@@ -9,9 +9,7 @@ We have configured this repository to used pipenv and micropipenv python depende
 # List of packages in pytorch-notebook
 
 ```
-- beautifulsoup4
 - bokeh
-- cloudpickle
 - cython
 - dask
 - dill
@@ -38,6 +36,9 @@ We have configured this repository to used pipenv and micropipenv python depende
 ```
 - jupyter-bokeh
 - jupyter-tensorboard
+- jupyterlab-git
+- jupyterlab-s3-browser
+- elyra-python-editor-extension
 ```
 
 ## Importing the PyTorch Notebook
@@ -75,7 +76,7 @@ Instead of using the pre-built version of the minimal notebook, you can build th
 With [Thoth](https://thoth-station.ninja/) advise
 
 ```bash
-s2i build . quay.io/thoth-station/s2i-minimal-notebook:latest \
+s2i build . quay.io/thoth-station/s2i-minimal-py38-notebook:latest \
 --env ENABLE_PIPENV=1 \
 --env THOTH_ADVISE=1 \
 --env THOTH_DRY_RUN=0 \
@@ -86,7 +87,7 @@ s2i-pytorch-notebook
 Without [Thoth](https://thoth-station.ninja/) advise
 
 ```bash
-s2i build . quay.io/thoth-station/s2i-minimal-notebook:latest \
+s2i build . quay.io/thoth-station/s2i-minimal-py38-notebook:latest \
 --env ENABLE_PIPENV=1 \
 --env THOTH_ADVISE=0 \
 --env THOTH_ERROR_FALLBACK=1 \
